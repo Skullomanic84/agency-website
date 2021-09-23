@@ -7,7 +7,7 @@ function Navbar() {
             <Wrap>
                 <Left>
                     <Logo>
-                        Agency
+                        THEAgency
                     </Logo>
                     <Menu>
                         <MenuItem>Home</MenuItem>
@@ -53,16 +53,24 @@ const Menu = styled.ul `
     list-style: none;   
 `
 const MenuItem = styled.li `
+    cursor: pointer;
     margin-right: 30px;
     font-size: 18px;
     color: #020826;
     font-weight: 600;
 `
 const Button = styled.button `
-    border: 1px solid #f9f4ef;
-    padding: 10px 15px;
-    background-color: #8c7851;
+cursor: pointer;
+    border: 1px solid #020826;
+    padding: 10px 17px;
+    background-color: transparent;
     color: #020826;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
+    transition: all 400ms;
+
+
+    &:hover {
+        background-color: #fffffe;
+    }
 `
